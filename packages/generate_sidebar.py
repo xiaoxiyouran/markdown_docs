@@ -138,6 +138,9 @@ def process_special_symbol(name):
     name = name.replace('.','_')
     name = name.replace('@','_')
     name = name.replace('+', '_')
+    name = name.replace(',', '_')
+    name = name.replace('，', '_')
+
     return name
 
 def generate_sidebar(global_tree, output_dir, info):
